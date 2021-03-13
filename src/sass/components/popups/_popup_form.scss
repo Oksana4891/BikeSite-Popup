@@ -1,0 +1,197 @@
+.popup-form {
+  &_blok-left {
+    @media screen and (max-width: 768px) {
+      min-height: 300px;
+    }
+    @media screen and (max-width: 576px) {
+      min-height: 227px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/step3.png);
+      filter: grayscale(100);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      z-index: -2;
+      @media screen and (max-width: 768px) {
+        background-image: url(../images/step3-mobile.png);
+      }
+    }
+  }
+
+  &_blok-right {
+    @media screen and (max-width: 768px) {
+      padding: 40px 15px;
+    }
+  }
+
+  &_title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    @media screen and (max-width: 768px) {
+      font-size: 23px;
+    }
+  }
+
+  input {
+    background: #ffffff;
+    border: 1px solid #1323b4;
+    height: 64px;
+    padding-left: 21px;
+    margin-top: 24px;
+    font-size: 21px;
+  }
+
+  &_texarea {
+    width: 100%;
+    height: 164px;
+    background: #ffffff;
+    border: 1px solid #1323b4;
+    box-sizing: border-box;
+    padding-left: 21px;
+    padding-top: 21px;
+    margin-top: 24px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    resize: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #1323b4;
+    opacity: 0.4;
+  }
+
+  &_input--name,
+  &_input--phone {
+    width: 100%;
+    text-align: left;
+    margin-right: 0;
+  }
+
+  &_time-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &_input--date,
+  &_input--time {
+    width: 50%;
+    text-align: center;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  &_input--date {
+    margin-right: 24px;
+    padding-right: 30px;
+    @media screen and (max-width: 1200px) {
+      margin-right: 0px;
+    }
+  }
+
+  &_time-block-hour {
+    position: relative;
+    width: 50%;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  &_input--time {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+  .scrollbar-time {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    font-size: 21px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #1323b4;
+    border-top: none;
+    opacity: 0;
+    z-index: -1;
+    @media screen and (max-width: 768px) {
+      width: 250px;
+      height: 200px;
+    }
+  }
+
+  .scrollbar-time.is-active {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .scrollbar-time_element {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .scrollbar-time_element:hover {
+    background-color: #1323b4;
+    color: #ffffff;
+  }
+
+  &_link {
+    display: inline-block;
+    margin-top: 45px;
+  }
+
+  &_total-price {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1323b4;
+    margin-top: 48px;
+    margin-bottom: 23px;
+  }
+
+  &_btn {
+    display: block;
+    text-decoration: none;
+    margin-top: 45px;
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+    }
+  }
+
+  .form-gift_list {
+    margin-top: 60px;
+
+    li {
+      margin-bottom: 21px;
+    }
+  }
+
+  .form-gift_bt-block {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+ 
+}

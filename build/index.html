@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <button class="js-open_BuyForm">Купить</button>
+    <button class="js-open_GiftForm">Купить подарочный сертификат</button>
+    <div class="popup-overlay js-popup">
+      <button type="button" class="popup_close js-popup_close">&times;</strong>
+      </button> 
+      <form id="buy">
+        <div class="popup-program popup">
+            <div class="popup-program_blok-left popup_blok-left ">
+                <div class="popup_blok--title">Шаг 1</div>
+                <p class="popup_blok--text">Выберите программу катания</p>
+            </div>
+            <div class="popup-program_blok-right popup_blok-right">
+                <ul class="popup-program_list popup_list">
+                    <li class="popup_item">
+                        <h3 class="popup_item--title">Экстримальный маршрут</h3>
+                        <p class="popup-program_item--text">Удивительные приключения, море адреналина, незабываемые
+                            впечатления ждут вас на этом маршруте. Это не просто прогулка по лесным и полевым дорогам -
+                            это реальное БЕЗДОРОЖЬЕ с болотами, лесными завалами, ручьями, бродами и прочими "радостями"
+                            внедорожного путешествия.</p>
+                        <div class="popup_item--address">Проходит по адресу: Орловский переулок 23 <a class="popup_link"
+                                href="#">(см. на
+                                карте) </a></div>
+                        <span class="popup_item--price">17 118</span>
+                        <span class="popup_item--valuta">&#8381</span>
+                        <button class="popup-program--btn popup_btn">Выбрать этот вариант</button>
+                    </li>
+                    <li class="popup_item">
+                        <h3 class="popup_item--title">Ознакомительный маршрут</h3>
+                        <p class="popup-program_item--text">Удивительные приключения, море адреналина, незабываемые
+                            впечатления ждут вас на этом маршруте. Это не просто прогулка по лесным и полевым дорогам -
+                            это реальное БЕЗДОРОЖЬЕ с болотами, лесными завалами, ручьями, бродами и прочими "радостями"
+                            внедорожного путешествия.</p>
+                        <div class="popup_item--address">Проходит по адресу: Орловский переулок 23 <a class="popup_link"
+                                href="#">(см. на
+                                карте) </a></div>
+                        <span class="popup_item--price">17 118</span>
+                        <span class="popup_item--valuta">&#8381</span>
+                        <button class="popup-program--btn popup_btn">Выбрать этот вариант</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup-transport popup">
+          <div class="popup-transport_blok-left popup_blok-left">
+            <div class="popup_blok--title">Шаг 2</div>
+            <p class="popup_blok--text">Выберите варианты и введите контакты</p>
+            <button class="popup-transport_bnt-back popup_bnt-back">
+              Выбрать другой маршрут
+            </button>
+          </div>
+          <div class="popup-transport_blok-right popup_blok-right">
+            <ul class="popup-transport_list popup_list">
+              <li class="popup-transport_item popup_item">
+                <img
+                  class="popup-transport_item--left"
+                  src="images/kvadro.png"
+                  alt="Квадроцикл"
+                />
+                <div class="popup-transport_item--right">
+                  <h3 class="popup-transport_item--title">
+                    Квадроцикл CFmoto 500 (водитель)
+                  </h3>
+                  <div class="popup_mark-list">Мощность: 500 кубов</div>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span>р</div>
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value" value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+              <li class="popup-transport_item popup_item">
+                <img
+                  class="popup-transport_item--left"
+                  src="images/kvadro.png"
+                  alt="Квадроцикл"
+                />
+                <div class="popup-transport_item--right">
+                  <h3 class="popup-transport_item--title">
+                    Квадроцикл CFmoto 500 (водитель)
+                  </h3>
+        
+                  <div class="popup_mark-list">Мощность: 500 кубов</div>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span> р</div>
+        
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value" value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+              <li class="popup-transport_item addition-block popup_item">
+                <div class="popup-transport_item--left">
+                  <h3 class="popup-transport_item--title item-addition--title">
+                    Дополнительная одежда
+                  </h3>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span>р</div>
+                </div>
+                <div class="popup-transport_item--right">
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value" value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+              <li class="popup-transport_item addition-block popup_item">
+                <div class="popup-transport_item--left">
+                  <h3 class="popup-transport_item--title item-addition--title">
+                    Дополнительная одежда
+                  </h3>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span>р</div>
+                </div>
+                <div class="popup-transport_item--right">
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value"  value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="popup-transport_fix-block">
+              <span class="popup_total-price">Итого к оплате: <span class="total-price">2500 </span> рублей</span>
+              <button class="popup-transport--btn popup_btn">Далее</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-form popup">
+            <div class="popup-form_blok-left popup_blok-left ">
+                <div class="popup_blok--title">Шаг 3</div>
+                <p class="popup_blok--text">Выберите варианты и введите контакты</p>
+                <button class=" popup-form_bnt-back popup_bnt-back">Вернуться назад</button>
+            </div>
+            <div class="popup-form_blok-right popup_blok-right">
+                <div class="popup-form_title">Введите ваши контакты</div>
+                <input class="popup-form_input--name" type="text" placeholder="Введите ваше имя">
+                <input class="popup-form_input--phone" type="text" placeholder="Введите ваш телефон">
+                <div class="popup-form_time-block">
+                    <input class="popup-form_input--date" type="date" placeholder="Какое число интересует?">
+               <div class="popup-form_time-block-hour">
+                <input class="popup-form_input--time js-input-time" type="text" name="time" placeholder="Какое время?">        
+                <div class="scrollbar-time">
+                    <div class="scrollbar-time_element">9:00</div>
+                    <div class="scrollbar-time_element">9:30</div>
+                    <div class="scrollbar-time_element">10:00</div>
+                    <div class="scrollbar-time_element">10:30</div>  
+                    <div class="scrollbar-time_element">11:00</div>
+                    <div class="scrollbar-time_element">11:30</div>
+                    <div class="scrollbar-time_element">12:00</div>
+                    <div class="scrollbar-time_element">12:30</div>
+                    <div class="scrollbar-time_element">12:00</div>
+                    <div class="scrollbar-time_element">12:30</div>
+                    <div class="scrollbar-time_element">13:00</div>
+                    <div class="scrollbar-time_element">13:30</div>
+                    <div class="scrollbar-time_element">14:00</div>
+                    <div class="scrollbar-time_element">14:30</div>
+                    <div class="scrollbar-time_element">14:00</div>
+                    <div class="scrollbar-time_element">14:30</div>   
+                     <div class="scrollbar-time_element">15:00</div>
+                    <div class="scrollbar-time_element">15:30</div>  
+                    <div class="scrollbar-time_element">16:00</div>
+                    <div class="scrollbar-time_element">16:30</div>
+                    <div class="scrollbar-time_element">17:00</div>
+                    <div class="scrollbar-time_element">17:30</div> 
+                    <div class="scrollbar-time_element">18:00</div>
+                    <div class="scrollbar-time_element">18:30</div>
+                    <div class="scrollbar-time_element">18:00</div>
+                    <div class="scrollbar-time_element">18:30</div>
+                    <div class="scrollbar-time_element">19:00</div>
+                    <div class="scrollbar-time_element">19:30</div>
+                    <div class="scrollbar-time_element">12:00</div>
+                    <div class="scrollbar-time_element">20:30</div>
+                </div>
+                </div>
+                </div>
+                <a class="popup-form_link popup_link" href="#">Выбрать адрес проведения услуги</a>
+                <div class="popup-form_total-price">Стоимость: <span>4 600</span> руб</div>
+                <div class="popup_mark-list">Сейчас вы оплачиваете 30% бронирования: <span>900</span> рублей</div>
+                <div class="popup_mark-list">По приезду 70% доплачиваете: <span>3 700 </span> рублей</div>
+                <a href="#" class="popup-form_btn popup_btn">Оплатить<span> 900 </span> рублей</a>
+            </div>
+        </div>
+      </form>
+      <form id="gift">
+        <div class="popup-program popup">
+            <div class="popup-program_blok-left popup_blok-left ">
+                <div class="popup_blok--title">Шаг 1</div>
+                <p class="popup_blok--text">Выберите программу катания</p>
+            </div>
+            <div class="popup-program_blok-right popup_blok-right">
+                <ul class="popup-program_list popup_list">
+                    <li class="popup_item">
+                        <h3 class="popup_item--title">Экстримальный маршрут</h3>
+                        <p class="popup-program_item--text">Удивительные приключения, море адреналина, незабываемые
+                            впечатления ждут вас на этом маршруте. Это не просто прогулка по лесным и полевым дорогам -
+                            это реальное БЕЗДОРОЖЬЕ с болотами, лесными завалами, ручьями, бродами и прочими "радостями"
+                            внедорожного путешествия.</p>
+                        <div class="popup_item--address">Проходит по адресу: Орловский переулок 23 <a class="popup_link"
+                                href="#">(см. на
+                                карте) </a></div>
+                        <span class="popup_item--price">17 118</span>
+                        <span class="popup_item--valuta">&#8381</span>
+                        <button class="popup-program--btn popup_btn">Выбрать этот вариант</button>
+                    </li>
+                    <li class="popup_item">
+                        <h3 class="popup_item--title">Ознакомительный маршрут</h3>
+                        <p class="popup-program_item--text">Удивительные приключения, море адреналина, незабываемые
+                            впечатления ждут вас на этом маршруте. Это не просто прогулка по лесным и полевым дорогам -
+                            это реальное БЕЗДОРОЖЬЕ с болотами, лесными завалами, ручьями, бродами и прочими "радостями"
+                            внедорожного путешествия.</p>
+                        <div class="popup_item--address">Проходит по адресу: Орловский переулок 23 <a class="popup_link"
+                                href="#">(см. на
+                                карте) </a></div>
+                        <span class="popup_item--price">17 118</span>
+                        <span class="popup_item--valuta">&#8381</span>
+                        <button class="popup-program--btn popup_btn">Выбрать этот вариант</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup-transport popup">
+          <div class="popup-transport_blok-left popup_blok-left">
+            <div class="popup_blok--title">Шаг 2</div>
+            <p class="popup_blok--text">Выберите варианты и введите контакты</p>
+            <button class="popup-transport_bnt-back popup_bnt-back">
+              Выбрать другой маршрут
+            </button>
+          </div>
+          <div class="popup-transport_blok-right popup_blok-right">
+            <ul class="popup-transport_list popup_list">
+              <li class="popup-transport_item popup_item">
+                <img
+                  class="popup-transport_item--left"
+                  src="images/kvadro.png"
+                  alt="Квадроцикл"
+                />
+                <div class="popup-transport_item--right">
+                  <h3 class="popup-transport_item--title">
+                    Квадроцикл CFmoto 500 (водитель)
+                  </h3>
+                  <div class="popup_mark-list">Мощность: 500 кубов</div>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span>р</div>
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value" value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+              <li class="popup-transport_item popup_item">
+                <img
+                  class="popup-transport_item--left"
+                  src="images/kvadro.png"
+                  alt="Квадроцикл"
+                />
+                <div class="popup-transport_item--right">
+                  <h3 class="popup-transport_item--title">
+                    Квадроцикл CFmoto 500 (водитель)
+                  </h3>
+        
+                  <div class="popup_mark-list">Мощность: 500 кубов</div>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span> р</div>
+        
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value" value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+              <li class="popup-transport_item addition-block popup_item">
+                <div class="popup-transport_item--left">
+                  <h3 class="popup-transport_item--title item-addition--title">
+                    Дополнительная одежда
+                  </h3>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span>р</div>
+                </div>
+                <div class="popup-transport_item--right">
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value" value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+              <li class="popup-transport_item addition-block popup_item">
+                <div class="popup-transport_item--left">
+                  <h3 class="popup-transport_item--title item-addition--title">
+                    Дополнительная одежда
+                  </h3>
+                  <div class="popup_mark-list">Цена за 1 единицу: <span class="unit-price">2500</span>р</div>
+                </div>
+                <div class="popup-transport_item--right">
+                  <div class="popup-transport_counter" id="counter">
+                    <button
+                      class="counter_bnt decrement"
+                      type="button"
+                      data-action="decrement"
+                    ></button>
+                    <input class="popup-transport_value"  value="1" />
+                    <button
+                      class="counter_bnt increment"
+                      type="button"
+                      data-action="increment"
+                    ></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="popup-transport_fix-block">
+              <span class="popup_total-price">Итого к оплате: <span class="total-price">2500 </span> рублей</span>
+              <button class="popup-transport--btn popup_btn">Далее</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-gift popup-form popup">
+            <div class="popup-form_blok-left popup_blok-left">
+                <div class="popup_blok--title">Шаг 3</div>
+                <p class="popup_blok--text">Выберите варианты и введите контакты</p>
+                <button class="popup-form_bnt-back popup_bnt-back">Вернуться назад</button>
+            </div>
+            <div class="popup-form_blok-right popup_blok-right">
+                <div class="popup-form_title">Введите ваши контакты</div>
+                <input class="popup-form_input--name" type="text" placeholder="Введите ваше имя" />
+                <input class="popup-form_input--phone" type="text" placeholder="Введите ваш телефон" />
+                <input class="popup-form_input--phone" type="email" placeholder="Ваш e-mail" />
+                <textarea class="popup-form_texarea"  placeholder="Введите пару слов поздравления"></textarea>
+                <ul class="form-gift_list">
+                    <li class="popup_mark-list">
+                        Проходит по адресу: Орловский переулок 23
+                        <a class="popup_link" href="#">(см. на карте)</a>
+                    </li>
+                    <li class="popup_mark-list">
+                        Получатель подарка сам запишется на удобное время в течение 3 месяцев
+                    </li>
+                    <li class="popup_mark-list">
+                        Сразу после оплаты вам придёт на почту придёт подарочный сертификат,
+                        который вы сможете распечатать и подарить, либо отправить в
+                        соц.сети/мессенджер
+                    </li>
+                </ul>
+                <a class="popup_link js-gift-cert" href="#">Посмотреть как выглядит сертификат</a>
+                <div class="form-gift_bt-block">
+                <div class="popup-form_total-price">Стоимость: <span>4 600</span> руб</div>
+                <a class="popup-form_btn popup_btn" href="#">Перейти к оплате</a>
+                </div>
+            </div>
+        </div>
+      </form>
+      <div class="page-success popup">
+          <div class="page-success_blok-left popup_blok-left"></div>
+          <div class="page-success_blok-right popup_blok-right">
+              <h3 class="page-success--title">Оплата прошла успешно!</h3>
+              <p>В течении 1 минуты вам придёт смс-уведомление с информацией по бронированию. Телефон тех. поддержки
+                  88005556633</p>
+              <button class="popup_btn page-success_close-btn">Закрыть</button>
+          </div>
+      </div>
+      <div class="page-error popup">
+          <div class="page-error_blok-left popup_blok-left"></div>
+          <div class="page-error_blok-right popup_blok-right">
+              <h3 class="page-error--title">Ошибка оплаты</h3>
+              <p>На вашей карте недостаточно средств</p>
+              <button class="popup_btn page-error_btn">Повторить платёж</button>
+          </div>
+      </div>
+      <div class="gift-img">
+        <img src="images/gift-sert.png" alt="">
+        <button type="button" class="popup_close  js-close-gift-img">&times;</strong>
+        </button> 
+      </div>
+      </div>
+     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

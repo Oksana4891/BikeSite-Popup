@@ -1,0 +1,187 @@
+.popup-transport {
+  &_blok-left {   
+    @media screen and (max-width: 768px) {
+      min-height: 300px;
+    }
+    @media screen and (max-width: 576px) {
+      min-height: 227px;
+    }  
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/step2.png);
+      filter: grayscale(100);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      z-index: -2;
+      @media screen and (max-width: 768px) {
+        background-image: url(../images/step2-mobile.png);
+      }
+    }
+
+   
+  }
+
+  &__blok-right {
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  &_list {
+    height: 550px;
+
+    @media screen and (max-width: 768px) {
+      height: auto;
+      margin-bottom: 110px;
+    }
+  }
+
+  &_item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 768px) {
+      flex-wrap: nowrap;
+    }
+    
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
+
+    &--left {
+      flex: 0 0 309px;
+      margin-right: 48px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    &--right {
+      flex-grow: 2;
+      @media screen and (max-width: 768px) {
+        padding: 25px 15px;
+      }
+    }
+
+    &--title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &_counter {
+    margin-top: 28px;
+    display: flex;
+  }
+
+  .addition-block {
+    @media screen and (max-width: 768px) {
+      padding: 25px 15px 0px;
+    }
+  }
+
+  .counter_bnt {
+    width: 37px;
+    height: 37px;
+    background: #1323b4;
+    border: 1px solid #1323b4;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .decrement {
+    background-image: url(../images/minus.svg);
+  }
+
+  .increment {
+    background-image: url(../images/plus.svg);
+  }
+
+  &_value {
+    width: 37px;
+    height: 37px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &_item--addition {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item-addition--title {
+    padding-bottom: 12px;
+  }
+
+  .popup_total-price {
+    width: 50%;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+    line-height: 64px;
+    color: #1323b4;
+    border: 1px solid #1323b4;
+    background-color: #ffffff;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 290px;
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+      height: 51px;
+      line-height: 51px;
+    }
+  }
+
+  &--btn {
+    width: 50%;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 290px;
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+      height: 51px;
+      line-height: 51px;
+    }
+  }
+
+  &_fix-block {
+    bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      display: block;
+      bottom: 30px;
+      width: 80%;
+      z-index: 100;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}

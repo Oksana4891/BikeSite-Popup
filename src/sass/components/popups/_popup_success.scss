@@ -1,0 +1,65 @@
+.page-success_blok-left {
+  @media screen and (max-width: 768px) {
+    min-height: 300px;
+  }
+  @media screen and (max-width: 576px) {
+    min-height: 227px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/step1.png);
+    filter: grayscale(100);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -2;
+    background-size: cover;
+    @media screen and (max-width: 768px) {
+      background-image: url(../images/step1-mobile.png);
+    }
+  }
+}
+
+.page-success_blok-right .page-error_blok-right {
+  padding: 167px 181px 20px 60px;
+  @media screen and (max-width: 768px) {
+    padding: 32px 15px;
+  }
+}
+
+.page-success--title,
+.page-error--title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #1323b4;
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.page-success_blok-right p,
+.page-error_blok-right p {
+  margin-top: 23px;
+  margin-right: 132px;
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+}
+
+.page-success_close-btn,
+.page-error_btn {
+  margin-top: 60px;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
+}

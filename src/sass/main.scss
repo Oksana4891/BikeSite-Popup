@@ -1,0 +1,15 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'base.scss';
+@import 'libs/jquery.mCustomScrollbar.min.scss';
+
+
+/* Layout */
+@import './components/popups/popup';
+@import './components/popups/popup_transport';
+@import './components/popups/popup_program';
+@import './components/popups/popup_form';
+@import './components/popups/popup_error';
+@import './components/popups/popup_success';

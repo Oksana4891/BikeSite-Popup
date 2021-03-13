@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <button class="js-open_BuyForm">Купить</button>
+    <button class="js-open_GiftForm">Купить подарочный сертификат</button>
+    <div class="popup-overlay js-popup">
+      <button type="button" class="popup_close js-popup_close">&times;</strong>
+      </button> 
+      <form id="buy">
+        //= html/popup/program.html
+        //= html/popup/transport.html
+        //= html/popup/form-buy.html
+      </form>
+      <form id="gift">
+        //= html/popup/program.html
+        //= html/popup/transport.html
+        //= html/popup/form-gift.html
+      </form>
+      //= html/popup/success.html
+      //= html/popup/error.html
+      <div class="gift-img">
+        <img src="images/gift-sert.png" alt="">
+        <button type="button" class="popup_close  js-close-gift-img">&times;</strong>
+        </button> 
+      </div>
+      </div>
+     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
